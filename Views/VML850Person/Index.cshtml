@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.VML850ID)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.VML850Name)
             </th>
             <th>
@@ -24,6 +27,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VML850ID)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.VML850Name)
             </td>
