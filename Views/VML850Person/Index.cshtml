@@ -1,0 +1,41 @@
+@model IEnumerable<VMLbaithi2324.Models.VML850Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VML850Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VML850SoThich)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VML850Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VML850SoThich)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VML850ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VML850ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VML850ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

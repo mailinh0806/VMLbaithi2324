@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VMLbaithi2324.props" />
+</Project>
